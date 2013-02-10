@@ -1,3 +1,6 @@
+/**
+ * Store containing a collection of Person instances.
+ */
 Ext.define('JSDuckDemo.store.People', {
 	extend: 'Ext.data.Store',
 

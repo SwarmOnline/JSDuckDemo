@@ -1,4 +1,7 @@
-Ext.define('JSDuckDemo.model.Person', {
+	/**
+	 * Holds data about a Person.
+	 */
+	Ext.define('JSDuckDemo.model.Person', {
 	extend: 'Ext.data.Model',
 
 	fields: [{

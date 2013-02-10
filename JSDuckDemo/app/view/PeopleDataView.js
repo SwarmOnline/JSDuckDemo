@@ -1,8 +1,12 @@
+/**
+ * Displays a list of Person model instances
+ */
 Ext.define('JSDuckDemo.view.PeopleDataView', {
 	extend: 'Ext.view.View',
 	alias: 'widget.PeopleDataView',
 
 	config: {
+
 		useFavouriteColour: true
 	},
 
