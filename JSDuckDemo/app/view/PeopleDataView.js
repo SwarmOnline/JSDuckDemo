@@ -6,7 +6,10 @@ Ext.define('JSDuckDemo.view.PeopleDataView', {
 	alias: 'widget.PeopleDataView',
 
 	config: {
-
+		/**
+		 * @cfg {Boolean} useFavouriteColour This option determines whether the Person's details
+		 * will use their FavouriteColour as the background.
+		 */
 		useFavouriteColour: true
 	},
 
