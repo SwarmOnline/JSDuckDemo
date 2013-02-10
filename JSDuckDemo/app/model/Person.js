@@ -16,9 +16,16 @@
 		type: 'string'
 	}],
 
-	getAge: function(){
-		var diffDays = ((new Date()).getTime() - this.get('DateOfBirth').getTime()) /1000/(60 * 60 * 24);
+	/**
+	 * Returns the Person's age in years.
+	 * @private
+	 * @param {Boolean} noRound If true this will return the value as a decimal with no rounding. If false the value with be rounded to the nearest year.
+	 * @return {Number} The Person's age
+	 */
+	getAge: function(noRound){
+		var diffDays    = ((new Date()).getTime() - this.get('DateOfBirth').getTime()) /1000/(60 * 60 * 24),
+			age         = diffDays / 365.25;
 
-		return Math.floor(diffDays / 365.25);
+		return noRound ? age : Math.floor(age);
 	}
 });
