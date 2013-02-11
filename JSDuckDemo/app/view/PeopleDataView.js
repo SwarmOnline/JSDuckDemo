@@ -55,6 +55,12 @@ Ext.define('JSDuckDemo.view.PeopleDataView', {
 	},
 
 	updateUseFavouriteColour: function(val){
+
+		/**
+		 * @property {Boolean} useFavouriteColourUpdated True if the useFavouriteColour configuration has been updated since init
+		 */
+		this.useFavouriteColourUpdated = true;
+
 		this.refresh();
 	}
 })
