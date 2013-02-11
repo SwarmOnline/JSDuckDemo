@@ -17,6 +17,17 @@ Ext.define('JSDuckDemo.view.PeopleDataView', {
 		this.initConfig(config);
 
 		this.callParent([config]);
+
+		this.addEvents(
+
+			/**
+			 * @event personclick Fires when a Person row is clicked
+			 * @param {JSDuckDemo.view.PeopleDataView} view The PeopleDataView that raised the event
+			 * @param {JSDuckDemo.model.Person} record The Person record that was clicked
+			 */
+			'personclick'
+
+		);
 	},
 
 	initComponent: function(){
